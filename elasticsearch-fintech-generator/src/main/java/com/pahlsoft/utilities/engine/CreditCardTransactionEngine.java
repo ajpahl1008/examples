@@ -58,7 +58,7 @@ public class CreditCardTransactionEngine implements TransactionEngine {
 
         client = new RestHighLevelClient(
                 RestClient.builder(
-                        new HttpHost(this.properties.getProperty("elasticsearch.host"), Integer.parseInt(this.properties.getProperty("elasticsearch.port")), "http"))
+                        new HttpHost(this.properties.getProperty("elasticsearch.host"), Integer.parseInt(this.properties.getProperty("elasticsearch.port")), this.properties.getProperty("elasticsearch.scheme")))
                         .setHttpClientConfigCallback(new RestClientBuilder.HttpClientConfigCallback() {
                             @Override
                             public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder httpClientBuilder) {

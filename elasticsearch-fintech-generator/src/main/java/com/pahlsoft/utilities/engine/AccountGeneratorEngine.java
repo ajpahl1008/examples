@@ -58,7 +58,7 @@ public class AccountGeneratorEngine implements AccountEngine {
 
         client = new RestHighLevelClient(
                 RestClient.builder(
-                        new HttpHost(this.properties.getProperty("elasticsearch.host"), Integer.parseInt(this.properties.getProperty("elasticsearch.port")), "http"))
+                        new HttpHost(this.properties.getProperty("elasticsearch.host"), Integer.parseInt(this.properties.getProperty("elasticsearch.port")), this.properties.getProperty("elasticsearch.scheme")))
                         .setHttpClientConfigCallback(new RestClientBuilder.HttpClientConfigCallback() {
                             @Override
                             public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder httpClientBuilder) {
@@ -73,17 +73,7 @@ public class AccountGeneratorEngine implements AccountEngine {
             } catch (Exception ioe) {
 
             }
-//            try {
-//                Thread.sleep(randomSleepTime(1000,10000));
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
         }
     }
-
-//    private static long randomSleepTime(int min, int max) {
-//        double delay_time = Math.random() * (max - min) + min;
-//        return (long) delay_time;
-//    }
 
 }

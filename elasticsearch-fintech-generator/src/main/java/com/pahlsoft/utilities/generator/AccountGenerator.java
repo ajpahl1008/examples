@@ -41,9 +41,7 @@ public class AccountGenerator {
         jsonMap.put("name4.email.main",faker.internet().emailAddress());
         jsonMap.put("name4.phone.cell",faker.phoneNumber().cellPhone());
 
-
         // current Address
-
         jsonMap.put("address.current.street", faker.address().streetAddress());
         jsonMap.put("address.current.city", faker.address().cityName());
 

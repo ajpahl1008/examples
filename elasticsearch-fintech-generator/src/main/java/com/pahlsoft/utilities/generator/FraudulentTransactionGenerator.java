@@ -17,7 +17,7 @@ public class FraudulentTransactionGenerator {
         jsonMap.put("merchant_category",faker.company().industry());
         jsonMap.put("address",faker.address().streetAddress());
         jsonMap.put("city",faker.address().cityName());
-        jsonMap.put("zipcode",Integer.parseInt(faker.address().zipCode()));
+        jsonMap.put("zipcode",faker.address().zipCode());
         jsonMap.put("state",faker.address().stateAbbr());
         jsonMap.put("fraud",true);
         jsonLocation.put("lat",Float.parseFloat(faker.address().latitude()));

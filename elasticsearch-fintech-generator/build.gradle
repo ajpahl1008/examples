@@ -31,3 +31,6 @@ dependencies {
 
 }
 
+clean {
+    delete 'out', 'build', 'transaction-engine.log'
+}

@@ -1,4 +1,5 @@
 *.cert
+*.swp
 *.jks
 .gradle/*
 .idea/*

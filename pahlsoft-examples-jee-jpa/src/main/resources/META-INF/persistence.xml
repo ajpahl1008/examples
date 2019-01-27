@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="PersistenceUnit">
+        <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+        <class>com.pahlsoft.examples.ee.jpa.AssetTypesEntity</class>
+        <class>com.pahlsoft.examples.ee.jpa.ChangeStatusEntity</class>
+        <class>com.pahlsoft.examples.ee.jpa.EventStatusEntity</class>
+        <class>com.pahlsoft.examples.ee.jpa.EventsEntity</class>
+        <class>com.pahlsoft.examples.ee.jpa.MegaeventEventsJ01Entity</class>
+        <class>com.pahlsoft.examples.ee.jpa.MegaeventPersonsEventJ01Entity</class>
+        <class>com.pahlsoft.examples.ee.jpa.MegaeventPersonsJ01Entity</class>
+        <class>com.pahlsoft.examples.ee.jpa.MegaeventTasksItemsJ03Entity</class>
+        <class>com.pahlsoft.examples.ee.jpa.MegaeventTasksJ01Entity</class>
+        <class>com.pahlsoft.examples.ee.jpa.MegaeventTasksOwnerJ02Entity</class>
+        <class>com.pahlsoft.examples.ee.jpa.PersonsEntity</class>
+        <class>com.pahlsoft.examples.ee.jpa.RolesEntity</class>
+        <class>com.pahlsoft.examples.ee.jpa.TargetedItemsEntity</class>
+        <class>com.pahlsoft.examples.ee.jpa.TaskResultEntity</class>
+        <class>com.pahlsoft.examples.ee.jpa.TaskStatusEntity</class>
+        <class>com.pahlsoft.examples.ee.jpa.TasksEntity</class>
+        <properties>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306/megaevent"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="openjpa.ConnectionUserName" value="megaevent"/>
+            <property name="openjpa.ConnectionPassword" value="password"/>
+            <property name="openjpa.Log" value="DefaultLevel=ERROR, Tool=ERROR"/>
+        </properties>
+    </persistence-unit>
+</persistence>

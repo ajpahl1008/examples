@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>My First Attempt To Store Properties in XML</comment>
+<entry key="port">11211</entry>
+<entry key="user">j003012</entry>
+<entry key="password">blah</entry>
+<entry key="serverlist">server1,server2,server3,server4</entry>
+</properties>

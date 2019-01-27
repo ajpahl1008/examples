@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PHONEBOOK>
+	<PERSON Status="Living">
+		<NAME>Joe Wang</NAME>
+		<EMAIL>joe@yourserver.com</EMAIL>
+		<TELEPHONE>202-999-9999</TELEPHONE>
+		<WEB>www.java2s.com</WEB>
+	</PERSON>
+	<PERSON Status="Living">
+		<NAME>Karol</NAME>
+			<EMAIL>karol@yourserver.com</EMAIL>
+			<TELEPHONE>306-999-9999</TELEPHONE>
+			<WEB>www.java2s.com</WEB>
+	</PERSON>
+	<PERSON Status="Deceased">
+		<NAME>Green</NAME>
+		<EMAIL>green@yourserver.com</EMAIL>
+		<TELEPHONE>202-414-9999</TELEPHONE>
+		<WEB>www.java2s.com</WEB>
+	</PERSON>
+</PHONEBOOK>

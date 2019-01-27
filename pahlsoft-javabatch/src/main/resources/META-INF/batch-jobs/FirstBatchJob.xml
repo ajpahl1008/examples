@@ -1,0 +1,19 @@
+<job id="FirstBatchJob" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+    <properties>
+        <property name="input_file" value="/tmp/Data.csv"/>
+        <property name="output_file" value="/tmp/Output.txt"/>
+    </properties>
+    
+    <step id="myStep" next="cleanup">
+            <chunk item-count="2">
+                <reader ref="exampleItemReader"></reader>
+                <processor ref="exampleItemProcessor"></processor>
+                <writer ref="exampleItemWriter"></writer>
+                
+            </chunk>
+    </step>
+    <step id="cleanup">
+        <batchlet ref="exampleBatchlet"></batchlet>
+        <end on="COMPLETED"/>
+    </step>
+</job>

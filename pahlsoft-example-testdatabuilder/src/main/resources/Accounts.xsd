@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://testdatabuilder.pahlsoft.com" xmlns:tns="http://testdtabuilder.pahlsoft.com"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.0">
+
+	<xs:complexType name="account">
+		<xs:sequence>
+			<xs:element minOccurs="1" name="accountNumber" type="xs:integer" />
+			<xs:element minOccurs="1" name="balance" type="xs:float" />
+			<xs:element minOccurs="1" name="accruedInterest" type="xs:float" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+	
+	

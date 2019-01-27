@@ -1,0 +1,1 @@
+java -Dcom.sun.management.jmxremote.port=22222 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -jar /opt/apps/applications/ICEFileWatcher/FileWatcher.jar  >> /opt/apps/applications/ICEFileWatcher/log/filewatcher.log 2>&1 &

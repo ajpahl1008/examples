@@ -1,0 +1,39 @@
+{
+  "app": {
+    "name": "test-injection-curl",
+    "pid": 50013,
+    "process_title": "node",
+    "argv": ["/usr/local/Cellar/node/6.4.0/bin/node", "/Users/aj/Development/Node/apm-nodejs-test/app.js"],
+    "runtime": {
+      "name": "node",
+      "version": "v6.4.0"
+    },
+    "agent": {
+      "name": "nodejs",
+      "version": "0.3.0"
+    },
+    "framework": {
+      "name": "express",
+      "version": "4.15.4"
+    }
+  },
+  "system": {
+    "hostname": "AJ-MacBook-Pro-5.local",
+    "architecture": "x64",
+    "platform": "darwin"
+  },
+  "transactions": [{
+    "id": "2e49aeb0-a60d-11e7-a45d-873ec80caf5b",
+    "name": "HelloWorldCurlEdition",
+    "type": "HTTP",
+    "duration": 100.694542,
+    "timestamp": "2017-09-30T17:18:41.137Z",
+    "result": "300",
+    "context": {
+      "user": {},
+      "tags": {},
+      "custom": {}
+    },
+    "traces": []
+  }]
+}

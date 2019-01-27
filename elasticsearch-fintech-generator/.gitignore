@@ -1,3 +1,5 @@
+*.cert
+*.jks
 .gradle/*
 .idea/*
 out

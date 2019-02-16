@@ -1,7 +1,0 @@
-*.cert
-*.swp
-*.jks
-.gradle/*
-.idea/*
-out
-*.protect
